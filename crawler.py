@@ -15,7 +15,8 @@ def test_country_info(country_name, country_link):
     print("============================================================")
     print("Information about -> " + country_name + " - " + country_link + " <-")
     # print("Capital -> " + str(crawler.capitals.get_capital(country_name, country_link)))
-    print("Area -> " + crawler.area.get_area(country_name, country_link))
+    # print("Area -> " + crawler.area.get_area(country_name, country_link))
+    print("Timezones -> " + str(crawler.timezones.get_timezones(country_name)))
 
 
 test_countries_info(countries)
