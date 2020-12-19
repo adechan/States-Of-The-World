@@ -20,8 +20,8 @@ def test_country_info(country_name, country_link):
     # print("Population -> " + str(crawler.population.get_population_and_density(country_name, country_link)[0]))
     # print("Density -> " + str(crawler.population.get_population_and_density(country_name, country_link)[1]))
     # print("Neighbours -> " + str(crawler.neighbours.get_neighbours(country_name, country_link, countries)))
-    print("Form of government -> " + crawler.government.get_government_system(country_name, country_link))
-
+    # print("Form of government -> " + crawler.government.get_government_system(country_name, country_link))
+    print("Languages -> " + str(crawler.languages.get_all_languages(country_name, country_link)))
 
 
 test_countries_info(countries)
